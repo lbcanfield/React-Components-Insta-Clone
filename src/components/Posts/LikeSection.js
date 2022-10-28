@@ -23,7 +23,8 @@ const LikeSection = props => {
           <FontAwesomeIcon icon={faComment} />
         </div>
       </div>
-      <p className='like-number'>100 likes</p>
+      {/* the like number does not have a variable that is chaing.  This must also come from dummy-data} */}
+      <p className='like-number'>{numberOfLikes}</p>
     </div>
   );
 };
