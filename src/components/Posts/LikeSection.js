@@ -16,7 +16,7 @@ const LikeSection = props => {
         className='like-section'
         key='likes-icons-container'
       >
-        <div className='like-section-wrapper'>
+        <div className='like-section-wrapper' onClick={likePost}>
           <FontAwesomeIcon icon={faHeart} />
         </div>
         <div className='like-section-wrapper'>
@@ -24,7 +24,7 @@ const LikeSection = props => {
         </div>
       </div>
       {/* the like number does not have a variable that is chaing.  This must also come from dummy-data} */}
-      <p className='like-number'>{numberOfLikes}</p>
+      <p className='like-number'>{numberOfLikes} likes</p>
     </div>
   );
 };
